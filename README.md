@@ -24,6 +24,16 @@ layers of abstraction on both ends.
 
 ### Pynet Device Client
 
+The Device Client powers the connection between your devices and the Gateway. 
+It makes it easy to set up Raspberry Pi's to send sensor data to the
+Gateway and to acquire configurable values like data frequency.
+
 ### Pynet Module
+
+The Module provides an easy way to interact with your devices and their data
+from your python scripts or modules. With the Module, a task like listing your
+devices becomes as easy as:
+
+    $ pynet.list_devices()
 
 
