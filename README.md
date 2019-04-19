@@ -8,9 +8,9 @@ Pynet is great for home automation and projects that require local remote sensin
 
 Pynet consists of 3 components: 
     
-    - Gateway
-    - Device Client
-    - Module
+- Gateway
+- Device Client
+- Module
 
 ![Pynet Architecture](https://github.com/nickmpaz/pynet-user-guide/blob/master/images/pynet.svg)
 
