@@ -34,8 +34,6 @@ The Module provides an easy way to interact with your devices and their data
 from your python scripts or modules. With the Module, a task like listing your
 devices becomes as easy as:
 
-    from pynet import Pynet
-    p = Pynet()
-    p.list_devices()
+    pynet.list_devices()
 
 
