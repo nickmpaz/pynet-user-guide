@@ -10,7 +10,7 @@ Pynet consists of 3 components:
     
     - Gateway
     - Device Client
-    - Python Module
+    - Module
 
 ![Pynet Architecture](https://github.com/nickmpaz/pynet-user-guide/blob/master/images/pynet.svg)
 
