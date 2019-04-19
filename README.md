@@ -1,4 +1,4 @@
 # Pynet IOT
 
-![Pynet Architecture](/images/pynet.jpeg)
+![Pynet Architecture](https://github.com/nickmpaz/pynet-user-guide/blob/master/images/pynet.jpg)
 
