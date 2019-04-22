@@ -53,7 +53,7 @@ and host it.
     $ git clone https://github.com/nickmpaz/pynet-gateway.git && cd pynet-gateway
     $ vagrant up
 
-Check that the Gateway is working with:
+That's it! Ansible will do the rest. Check that the Gateway is working with:
 
     $ curl http://localhost:5000
     [Pynet] - Connection Successful
