@@ -24,16 +24,42 @@ layers of abstraction on both ends.
 
 ### Pynet Device Client
 
-The Device Client powers the connection between your devices and the Gateway. 
-It makes it easy to set up Raspberry Pi's to send sensor data to the
-Gateway and to acquire configurable values like data frequency.
+The Device Client is a wrapper for the Pynet Module. It powers the connection 
+between your devices and the Gateway. The Client makes it easy to set up 
+Raspberry Pi's to send sensor data to the Gateway and to acquire configurable 
+values like data frequency.
 
 ### Pynet Module
 
 The Module provides an easy way to interact with your devices and their data
-from your python scripts or modules. With the Module, a task like listing your
-devices becomes as easy as:
+from your python scripts or modules. Tasks like listing your devices become as
+easy as:
 
     pynet.list_devices()
 
+## Getting started
 
+### Prerequisites
+
+- A working Vagrant installation 
+- Local wifi connection
+- Raspberry Pi(s)
+
+### Setup the Gateway
+
+On any machine with Vagrant and a wifi connection, download the Pynet Gateway
+and host it.
+
+    $ git clone https://github.com/nickmpaz/pynet-gateway.git && cd pynet-gateway
+    $ vagrant up
+
+Check that the Gateway is working with:
+
+    $ curl http://localhost:5000
+    [Pynet] - Connection Successful
+
+Make note of your host machine's hostname. Find the hostname on linux with
+
+    $ hostname
+
+### 
