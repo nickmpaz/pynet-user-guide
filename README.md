@@ -73,11 +73,13 @@ get the pi set up with rasbian
 
 download the client
 
+.env file
+
 do the installation process
 
 start the client
 
-### Interact with your devices and their data
+### Interact with your Devices and their Data
 
 from pynet import Pynet
 p = Pynet()
@@ -86,5 +88,9 @@ p.resolve_connection()
 now use the module to do blah blah blah
 
 check out the docs here.
+
+## Shutting Down & Restarting the Gateway
+
+## Using Raspberry Pis with Sensors
 
 
