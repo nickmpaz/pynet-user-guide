@@ -24,10 +24,9 @@ layers of abstraction on both ends.
 
 ### Pynet Device Client
 
-The Device Client is a wrapper for the Pynet Module. It powers the connection 
-between your devices and the Gateway. The Client makes it easy to set up 
-Raspberry Pi's to send sensor data to the Gateway and to acquire configurable 
-values like data frequency.
+The Device Client powers the connection between your devices and the Gateway. 
+The Client makes it easy to set up Raspberry Pi's to send sensor data to the 
+Gateway and to acquire configurable values like data frequency.
 
 ### Pynet Module
 
