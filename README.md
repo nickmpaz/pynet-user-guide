@@ -62,4 +62,29 @@ Make note of your host machine's hostname. Find the hostname on linux with
 
     $ hostname
 
-### 
+### Setup a Raspberry Pi
+
+Note: In this quick guide, we'll use a Device Client that sends random values to the
+Gateway. Because there are a multitude of ways to outfit a Raspberry Pi with sensors, 
+using them requires a little more configuration. These steps will be explained later.
+
+FIXME v v v v v v v
+get the pi set up with rasbian
+
+download the client
+
+do the installation process
+
+start the client
+
+### Interact with your devices and their data
+
+from pynet import Pynet
+p = Pynet()
+p.resolve_connection()
+
+now use the module to do blah blah blah
+
+check out the docs here.
+
+
