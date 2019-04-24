@@ -31,10 +31,14 @@ Gateway and to acquire configurable values like data frequency.
 ### Pynet Module
 
 The Module provides an easy way to interact with your devices and their data
-from your python scripts or modules. Tasks like listing your devices become as
-easy as:
+from your python scripts or modules. 
 
-    pynet.list_devices()
+    from pynet import Pynet
+    p = Pynet()
+
+Tasks like listing your devices become as easy as:
+
+    p.list_devices()
 
 ## Getting started
 
