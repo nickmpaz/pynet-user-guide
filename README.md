@@ -44,11 +44,18 @@ Tasks like listing your devices become as easy as:
 
 ### Prerequisites
 
-- A working Vagrant installation 
+- Vagrant OR Ansible 
 - Local wifi connection
 - Raspberry Pi(s)
 
 ### Setup the Gateway
+
+There are two options for hosting the Pynet Gateway.
+
+- Vagrant machine
+- Raspberry Pi
+
+#### Host with Vagrant
 
 On any machine with Vagrant and a wifi connection, download the Pynet Gateway
 and host it.
@@ -56,14 +63,29 @@ and host it.
     $ git clone https://github.com/nickmpaz/pynet-gateway.git && cd pynet-gateway
     $ vagrant up
 
-That's it! Ansible will do the rest. Check that the Gateway is working with:
+Check that the Gateway is working with:
 
     $ curl http://localhost:5000
     [Pynet] - Connection Successful
 
-Make note of your host machine's hostname. Find the hostname on linux with
+#### Host with Raspberry Pi
 
-    $ hostname
+Connect your host machine and Raspberry Pi to the same network. On the Pi, make
+note of it's ip address. Find it with:
+
+    $ hostname -I
+
+On any machine with Ansible and a wifi connection, download the Pynet Gateway
+and navigate to it's directory. Run the pi-provision playbook to set up the
+Gateway on the Pi. Replace 'your-pi's-ip' your Pi's ip address.
+
+    $ git clone https://github.com/nickmpaz/pynet-gateway.git && cd pynet-gateway
+    $ ansible-playbook -k -i pi@your-pi's-ip, ansible/pi-provision.yml
+
+Check that the Gateway is working with:
+    
+    $ curl http://your-pi's-ip:5000
+    [Pynet] - Connection Successful
 
 ### Setup a Raspberry Pi
 
