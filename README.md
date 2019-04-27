@@ -68,6 +68,12 @@ Check that the Gateway is working with:
     $ curl http://localhost:5000
     [Pynet] - Connection Successful
 
+The Gateway can be shutdown with:
+
+    $ vagrant destroy
+
+Don't worry, all data will persist between vagrant instances.
+
 #### Host with Raspberry Pi
 
 Connect your host machine and Raspberry Pi to the same network. On the Pi, make
@@ -89,33 +95,34 @@ Check that the Gateway is working with:
 
 ### Setup a Raspberry Pi
 
-Note: In this quick guide, we'll use a Device Client that sends random values to the
-Gateway. Because there are a multitude of ways to outfit a Raspberry Pi with sensors, 
-using them requires a little more configuration. These steps will be explained later.
+Note: In this quick guide, we'll use the base Device Client which sends random values 
+to the Gateway. Because there are a multitude of ways to outfit a Raspberry Pi with 
+sensors, using them requires a little more configuration. These steps are explained at 
+https://github.com/nickmpaz/pynet-device-client.
 
-FIXME v v v v v v v
-get the pi set up with rasbian
+On the Pi, download the device client and navigate to it's directory.
 
-download the client
+    $ git clone http://github.com/nickmpaz/pynet-device-client.git && cd pynet-device-client
 
-.env file
+Fill out the .env file:
 
-do the installation process
+Run the device client with:
 
-start the client
 
 ### Interact with your Devices and their Data
 
-from pynet import Pynet
-p = Pynet()
-p.resolve_connection()
+Now that you have the Gateway and a Raspberry Pi up and running, you can interact with
+your devices and their data using the Pynet module. Just import it into you code and 
+use methods like:
 
-now use the module to do blah blah blah
+    list_devices()
 
-check out the docs here.
+    get_data(device_id)
 
-## Shutting Down & Restarting the Gateway
+    set_config(device_id)
 
-## Using Raspberry Pis with Sensors
+See https://github.com/nickmpaz/pynet-module for the full documentation.
+
+
 
 
